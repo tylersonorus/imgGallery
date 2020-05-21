@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/modal-window.css" />
+    <script
+      src="https://kit.fontawesome.com/68e9d78e21.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="outer-container"></div>
+    <div class="modal-backdrop">
+      <div class="modal-window">
+        <div class="img-wrapper">
+          <div class="arrow-circle right"><i class="arrow"></i></div>
+          <div class="arrow-circle left"><i class="arrow"></i></div>
+          <i class="close"></i>
+        </div>
+
+        <div class="under-section">
+          <div class="favorites">
+            <div class="likes"><span></span><i class="fas fa-heart"></i></div>
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <div class="comment-section">
+            <div class="leave-comment">
+              <label for="myname">Ваше имя:</label>
+              <input type="text" id="myname"></input>
+              <label for="myname">Ваш комментарий:</label>
+              <textarea id="mycomment"></textarea>
+              <button id="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="module" src="./gallery.js"></script>
+  </body>
+</html>

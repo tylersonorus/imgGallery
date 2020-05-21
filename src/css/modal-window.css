@@ -1,0 +1,263 @@
+.modal-window {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin-top: 3%;
+  align-content: flex-start;
+  /* height: 100%; */
+}
+
+.modal-window > div {
+  flex: 1 100%;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 80%;
+  position: relative;
+  /* top:5%; */
+  width: 90%;
+  /* left: 5%; */
+  background-color: black;
+  z-index: 2;
+  /* position: absolute; */
+}
+
+.img-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  /* margin: auto; */
+}
+
+.modal-backdrop {
+  justify-content: center;
+  display: flex;
+  overflow: overlay;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* top: 50%; */
+}
+
+.arrow-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* top: -16px; */
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  border: solid gray;
+  border-radius: 30px;
+  background-color: aliceblue;
+}
+
+.arrow-circle:hover {
+  opacity: 1;
+}
+.right {
+  right: -23px;
+}
+
+.left {
+  left: -23px;
+}
+.right i {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 25%;
+}
+
+.left i {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 25%;
+}
+
+.close {
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  border: solid gray;
+  border-radius: 30px;
+  background-color: aliceblue;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 5px;
+  background-color: rgb(0, 0, 0);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.under-section {
+  flex-flow: row wrap;
+  display: flex;
+  /* height: 100%; */
+  width: 100%;
+  background-color: white;
+  margin-bottom: 3%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.under-section > div {
+  flex: 1 100%;
+}
+.favorites {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.favorites>* {
+  flex: 0 1 0;
+  color: gray;
+  font-size:35px;
+  
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+.likes>* {
+  font-size: 40px;
+}
+
+.likes>span {
+  margin-right: 5px;
+}
+/* .fa-heart,.fa-share-alt{
+  color: gray;
+} */
+
+.hover  {
+  color: red !important;
+  opacity: 0.7;
+}
+.fa-share-alt:hover {
+  color:black;
+  opacity: 0.7;
+}
+
+.liked {
+  color: red !important;
+  opacity: 1;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.body-comment {
+  flex: 0 1 100%;
+  width: 100%;
+  height: 100%;
+  /* background-color: tomato; */
+}
+
+.body-comment > * {
+  width: fit-content;
+  background-color: #ecececf6;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.comment-section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+
+.comment {
+  margin: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 20px;
+}
+
+.comment-section > div {
+  flex: 0 70%;
+}
+
+.user {
+  font-size: 20px;
+  margin-bottom: 5px;
+
+}
+
+.comment-text {
+  font-size: 20px;
+
+}
+.leave-comment{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+.leave-comment > *{
+  font-size: 20px;
+  flex: 0 1 50%;
+  margin-left: 60px;;
+}
+label {
+  margin-top: 10px;
+}
+#submit {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #ecececf6;
+  outline: none !important;
+}
+#myname,#mycomment {
+  margin-top: 5px;
+  border: solid 1px #ecececf6;
+  border-radius: 5px;
+  outline: none !important;
+}
